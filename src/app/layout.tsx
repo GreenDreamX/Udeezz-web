@@ -4,12 +4,13 @@ import "../styles/globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
+import { Toaster } from "sonner";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Portofolio Pribadi",
-  description: "Website portofolio pribadi modern yang dibuat dengan Next.js dan Tailwind CSS",
+  title: "Yudhistira Arya Kalimusada - Front-End Developer & UI/UX Enthusiast",
+  description: "Portfolio of Yudhistira Arya Kalimusada, a front-end developer and UI/UX enthusiast passionate about crafting clean, interactive, and meaningful digital products.",
 };
 
 export default function RootLayout({
@@ -18,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="id" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
@@ -29,6 +30,7 @@ export default function RootLayout({
           <Header />
           <main>{children}</main>
           <Footer />
+          <Toaster richColors />
         </ThemeProvider>
       </body>
     </html>

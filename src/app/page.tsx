@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { AnimateOnScroll } from "@/components/animate-on-scroll";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
               <span className="inline bg-gradient-to-r from-[#F596D3] to-[#D247BF] text-transparent bg-clip-text">
                 Hello
               </span>{" "}
-              , I'm
+              I'm
             </h1>{" "}
             <h2 className="inline">
               <span className="inline bg-gradient-to-r from-[#61DAFB] via-[#1fc0f1] to-[#03a3d7] text-transparent bg-clip-text">
@@ -24,28 +25,33 @@ export default function Home() {
 
         <AnimateOnScroll delay={0.2}>
           <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
-            A passionate Front-End Developer. Welcome to my personal space on the internet.
+            A passionate Junior Developer. Welcome to my personal space on the internet.
           </p>
         </AnimateOnScroll>
 
         <AnimateOnScroll delay={0.4}>
           <div className="space-y-4 md:space-y-0 md:space-x-4">
             <Link href="/projects">
-              <Button className="w-full md:w-1/3">Lihat Portofolio</Button>
+              <Button className="w-full md:w-1/3">Check My Portofolio</Button>
             </Link>
 
             <Link href="/contact">
-              <Button variant="outline" className="w-full md:w-1/3">Hubungi Saya</Button>
+              <Button variant="outline" className="w-full md:w-1/3">Contact Me</Button>
             </Link>
           </div>
         </AnimateOnScroll>
       </div>
 
-      {/* Hero-img */}
+      {/* Hero Image */}
       <AnimateOnScroll delay={0.6}>
-        <div className="shadow-lg">
-          <div className="w-80 h-80 bg-secondary rounded-lg"></div>
-        </div>
+        <Image
+          src="/image/hero.png"
+          alt="Yudhistira Arya Kalimusada"
+          width={250}
+          height={250}
+          className="rounded-2xl"
+          priority
+        />
       </AnimateOnScroll>
 
     </section>
