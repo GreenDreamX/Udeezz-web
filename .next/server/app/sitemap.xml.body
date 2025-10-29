@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>https://udeezz.my.id/</loc>
+<lastmod>2025-10-29T13:45:37.162Z</lastmod>
+<changefreq>yearly</changefreq>
+<priority>1</priority>
+</url>
+<url>
+<loc>https://udeezz.my.id/about</loc>
+<lastmod>2025-10-29T13:45:37.162Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://udeezz.my.id/projects</loc>
+<lastmod>2025-10-29T13:45:37.162Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://udeezz.my.id/contact</loc>
+<lastmod>2025-10-29T13:45:37.162Z</lastmod>
+<changefreq>yearly</changefreq>
+<priority>0.5</priority>
+</url>
+</urlset>
